@@ -1,4 +1,4 @@
-use crate::movement::Velocity;
+use crate::movement::{Velocity, SNAKE_SPEED};
 
 use bevy::prelude::*;
 #[derive(Bundle)]
@@ -7,12 +7,10 @@ struct SnakeBundle {
     head: SpriteBundle,
 }
 
-const SNAKE_VELOCITY: Vec3 = Vec3::new(100.0, 0.0, 0.0);
-
 fn spawn_snake(mut commands: Commands) {
     commands.spawn((SnakeBundle {
         velocity: Velocity {
-            value: SNAKE_VELOCITY,
+            value: Vec3::new(SNAKE_SPEED, 0.0, 0.0),
         },
         head: SpriteBundle {
             sprite: Sprite {
