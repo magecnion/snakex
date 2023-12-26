@@ -1,3 +1,9 @@
+Next:
+- borders
+- audio effects
+- todo update CI everytime is pushed
+- multiplayer
+
 Ideas:
 - SIBO pattern
 - black map walking discovering as AOE
