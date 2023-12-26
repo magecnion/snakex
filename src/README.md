@@ -1,5 +1,5 @@
 Next:
-- borders
+- borders + take all the screen + focus
 - audio effects
 - todo update CI everytime is pushed
 - multiplayer
