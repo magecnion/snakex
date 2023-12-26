@@ -20,11 +20,7 @@ fn update_position(mut query: Query<(&Velocity, &mut Transform)>, time: Res<time
 
 pub const SNAKE_SPEED: f32 = 100.0;
 
-fn snake_movement(
-    mut query: Query<&mut Velocity>,
-    keyboard_input: Res<Input<KeyCode>>,
-    time: Res<time::Time>,
-) {
+fn snake_movement(mut query: Query<&mut Velocity>, keyboard_input: Res<Input<KeyCode>>) {
     let mut velocity = query.single_mut();
 
     if keyboard_input.pressed(KeyCode::Left) {
