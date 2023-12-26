@@ -23,9 +23,9 @@ jobs:
         profile: minimal
         override: true
 
-    - name: Install wasm-server-runner
+    - name: Install wasm-bindgen-cli
       run: |
-        cargo install wasm-server-runner
+        cargo install wasm-bindgen-cli
 
     - name: Build WASM
       run: |
